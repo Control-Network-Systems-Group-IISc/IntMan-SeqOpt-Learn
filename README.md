@@ -5,8 +5,8 @@ Welcome to our project! In this repository, we have evaluated the autonomous int
 
 Currently, the code includes the following techniques to get trajectories. 
   - Two exaustive search based optimization techniques
-      a. Combined optimization (non-linear optimzation program)
-      b. Best sequence optimization (smaller convex programs solved sequentially) 
+      - Combined optimization (non-linear optimzation program)
+      - Best sequence optimization (smaller convex programs solved sequentially) 
   - Specific sequence based optimization framework where the sequence is given by
       - Collect-Merge-Learn based trained RL agent (including the code to train the agent)
       - first come first serve rule
