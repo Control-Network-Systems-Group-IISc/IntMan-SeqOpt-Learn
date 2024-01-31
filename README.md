@@ -8,7 +8,7 @@ Currently, the code includes the following techniques to get trajectories.
       a. Combined optimization (non-linear optimzation program)
       b. Best sequence optimization (smaller convex programs solved sequentially) 
   - Specific sequence based optimization framework where the sequence is given by
-      a. Collect-Merge-Learn based trained RL agent (including the code to train the agent)
+      - Collect-Merge-Learn based trained RL agent (including the code to train the agent)
       b. first come first serve rule
       c. ratio of current distance to intersection and velocity (time to react -- G. R. de Campos, P. Falcone et al. in 2013)
       d. convex combination of time to react and distance to intersection (CDT -- N. Suryarachi, F. M. Tariq et al. in 2021)
