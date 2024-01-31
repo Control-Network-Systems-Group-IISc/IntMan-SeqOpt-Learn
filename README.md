@@ -9,11 +9,11 @@ Currently, the code includes the following techniques to get trajectories.
       b. Best sequence optimization (smaller convex programs solved sequentially) 
   - Specific sequence based optimization framework where the sequence is given by
       - Collect-Merge-Learn based trained RL agent (including the code to train the agent)
-      b. first come first serve rule
-      c. ratio of current distance to intersection and velocity (time to react -- G. R. de Campos, P. Falcone et al. in 2013)
-      d. convex combination of time to react and distance to intersection (CDT -- N. Suryarachi, F. M. Tariq et al. in 2021)
-      e. product of time to react and distance to intersection (PDT -- N. Suryarachi, R. Chandra et al.  in 2020)
-      f. solving an optimization problem to get the crossing order (OCP -- X. Pan, B. Chen et al. in 2023)
+      - first come first serve rule
+      - ratio of current distance to intersection and velocity (time to react -- G. R. de Campos, P. Falcone et al. in 2013)
+      - convex combination of time to react and distance to intersection (CDT -- N. Suryarachi, F. M. Tariq et al. in 2021)
+      - product of time to react and distance to intersection (PDT -- N. Suryarachi, R. Chandra et al.  in 2020)
+      - solving an optimization problem to get the crossing order (OCP -- X. Pan, B. Chen et al. in 2023)
       
 
 A Deep deterministic policy gradient agent is used for policy learning deciding the robot crossing order
