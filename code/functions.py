@@ -65,10 +65,10 @@ def get_follow_dist(pre_v, this_v, this_time):
 
 	if (t_ind_pre != None) and (t_ind_this == None):
 		pre_v0 = pre_v.v_traj[t_ind_pre]
-		dist0 = ( ((pre_v0)**2)/ (2*(pre_v.u_min + 0.001))) - ((this_v.v0**2)/(2*(this_v.u_min + 0.001)))
+		dist0 = ( ((pre_v0)**2)/ (2*(pre_v.u_min))) - ((this_v.v0**2)/(2*(this_v.u_min)))
 		
 	c0 = max(0, dist0)
-	foll_dist1 = 1.45*((pre_v.length) + c0)
+	foll_dist1 = ((pre_v.length) + c0)
 	return foll_dist1
 
 
