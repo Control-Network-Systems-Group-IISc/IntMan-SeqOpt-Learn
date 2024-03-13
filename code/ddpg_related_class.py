@@ -76,16 +76,16 @@ class DDPG:
 
         inputs = layers.Input(shape=(self.num_states,1))
 
-        '''layer_1 = layers.Flatten() (inputs)
+        layer_1 = layers.Flatten() (inputs)
 
         layer_1 = layers.Dense(4*self.num_actions, activation='relu') (layer_1)
 
         layer_2 = layers.Dense(2*self.num_actions) (layer_1)
 
-        layer_3 = layers.Dense(self.num_actions) (layer_2)'''
+        layer_3 = layers.Dense(self.num_actions) (layer_2)
 
 
-        # bn_inputs = layers.BatchNormalization() (inputs)
+        '''# bn_inputs = layers.BatchNormalization() (inputs)
 
         #inputs = layers.Reshape(target_shape=(self.num_states,1)) (inputs)
 
@@ -103,7 +103,7 @@ class DDPG:
 
         layer_3 = layers.Conv1D(1, 8, strides=8, kernel_initializer=last_init, bias_initializer=last_init) (layer_2)
 
-        layer_3 = layers.Flatten() (layer_3)
+        layer_3 = layers.Flatten() (layer_3)'''
 
         outputs_pi = activations.softmax(layer_3)
         
