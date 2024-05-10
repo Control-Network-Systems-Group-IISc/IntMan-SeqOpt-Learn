@@ -89,19 +89,19 @@ class DDPG:
 
         #inputs = layers.Reshape(target_shape=(self.num_states,1)) (inputs)
 
-        layer_1 = layers.Conv1D(16, data_file.num_features, strides=data_file.num_features, activation="relu") (inputs)
+        layer_1 = layers.Conv1D(4, data_file.num_features, strides=data_file.num_features, activation="relu") (inputs)
 
         layer_1 = layers.Flatten() (layer_1)
 
         layer_1 = layers.Reshape(target_shape=(layer_1.shape[-1], 1)) (layer_1)
 
-        layer_2 = layers.Conv1D(8, kernel_size=16, strides=16) (layer_1)
+        layer_2 = layers.Conv1D(2, kernel_size=4, strides=4) (layer_1)
 
         layer_2 = layers.Flatten() (layer_2)
 
         layer_2 = layers.Reshape(target_shape=(layer_2.shape[-1], 1)) (layer_2)
 
-        layer_3 = layers.Conv1D(1, 8, strides=8, kernel_initializer=last_init, bias_initializer=last_init) (layer_2)
+        layer_3 = layers.Conv1D(1, 2, strides=2, kernel_initializer=last_init, bias_initializer=last_init) (layer_2)
 
         layer_3 = layers.Flatten() (layer_3)'''
 
