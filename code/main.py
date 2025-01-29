@@ -107,7 +107,7 @@ def func(_args):
 		actor_lr = 0.0001
 		critic_lr = 0.001
 		p_factor = 0.0001
-		d_factor = 0
+		d_factor = 0.99
 
 		agent = None
 		
